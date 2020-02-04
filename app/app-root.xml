@@ -1,0 +1,41 @@
+<BottomNavigation>
+    <TabStrip>
+        <TabStripItem class="navigation__item">
+            <!--
+                Note TabStripItem will only accept single Label and/or single Image elements that it
+                will "adopt"; any other layout elements you try to specify will be ignored
+            -->
+            <Label text="Home" />
+            <Image src="font://&#xf015;" class="fas t-36" />
+        </TabStripItem>
+        <TabStripItem class="navigation__item">
+            <Label text="Tickets" />
+            <Image src="font://&#xf1ea;" class="far t-36" />
+        </TabStripItem>
+        <TabStripItem class="navigation__item">
+            <Label text="Contact" />
+            <Image src="font://&#xf095;" class="fas t-36" />
+        </TabStripItem>
+        <TabStripItem class="navigation__item">
+            <label text="Login" />
+            <Image src="font://&#xf007;" class="fas t-36" />
+        </TabStripItem>
+    </TabStrip>
+
+    <TabContentItem>
+        <Frame defaultPage="home/home-items-page" />
+    </TabContentItem>
+
+    <TabContentItem>
+        <Frame defaultPage="browse/browse-page" />
+    </TabContentItem>
+
+    <TabContentItem>
+        <Frame defaultPage="search/search-page" />
+    </TabContentItem>
+
+    <TabContentItem>
+        <Frame defaultPage="login/login-page" />
+    </TabContentItem>
+
+</BottomNavigation>

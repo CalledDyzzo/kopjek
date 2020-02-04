@@ -1,0 +1,22 @@
+#label1 {
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 1em;
+    font-family: Anton,sans-serif;
+    letter-spacing: -.04em;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  #actionbar {
+    background-color: grey;
+  }
+  
+  .grid {
+    background: url('https://www.kopjek.com/wp-content/uploads/2019/09/nye-website-banner.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+  

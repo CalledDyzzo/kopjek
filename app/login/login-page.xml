@@ -1,0 +1,20 @@
+<Page
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+    <ActionBar class="actionbar">
+        <Label text="Login"></Label>
+    </ActionBar>
+    <ScrollView>
+		<StackLayout class="gradient">
+			<TextField hint="Uw emailadres" backgroundColor="#e7e7e7" />
+			<TextField hint="Uw Wachtwoord" backgroundColor="#e7e7e7" />
+
+			<Button text="Verzend"/>
+			<Button text="Annuleren"/>
+
+            <Button text="Heeft u nog geen account, klik dan hier" /> 
+
+		</StackLayout>
+        
+	</ScrollView>
+</Page>
