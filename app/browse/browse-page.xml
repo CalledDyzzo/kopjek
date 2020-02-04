@@ -5,9 +5,24 @@
     <ActionBar class="actionbar">
         <Label text="Tickets"></Label>
     </ActionBar>
-
-    <GridLayout class="page__content">
-        <Label class="page__content-icon far" text="&#xf1ea;"></Label>
-        <Label class="page__content-placeholder" text="<!-- tickets page content goes here -->"></Label>
-    </GridLayout>
+    
+    <GridLayout rows="*" xmlns:lv="nativescript-ui-listview" height="100%">
+		<lv:RadListView id="list-view" row="0" items="{{ countries }}" marginRight="-2">
+			<lv:RadListView.listViewLayout>
+				<lv:ListViewGridLayout scrollDirection="Vertical" itemHeight="200" spanCount="2" />
+			</lv:RadListView.listViewLayout>
+			<lv:RadListView.itemTemplate>
+				<GridLayout rows="*" backgroundColor="White">
+					<GridLayout rows="*" columns="*" margin="15">
+						<Image src="{{ imageSrc }}" stretch="aspectFill" />
+						<GridLayout verticalAlignment="bottom">
+							<StackLayout backgroundColor="#BBFFFFFF" paddingTop="8" paddingBottom="8" paddingLeft="16" paddingRight="16">
+								<Label text="{{ name }}" class="countryName" />
+							</StackLayout>
+						</GridLayout>
+					</GridLayout>
+				</GridLayout>
+			</lv:RadListView.itemTemplate>
+		</lv:RadListView>
+	</GridLayout>
 </Page>
