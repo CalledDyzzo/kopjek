@@ -1,5 +1,6 @@
 import { ObservableProperty } from "~/browse/observable-property-decorator";
 import { Observable } from "tns-core-modules/data/observable";
+import { backgroundProperty } from "tns-core-modules/ui/page/page";
 
 export class BrowseViewModel extends Observable {
 countries: { name: string, imageSrc: string }[] = [

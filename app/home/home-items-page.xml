@@ -1,16 +1,17 @@
 <Page
+    class="background"
     navigatingTo="onNavigatingTo"  
     xmlns="http://schemas.nativescript.org/tns.xsd">
     
 
     <ActionBar class="actionbar">
-        <Label text="Home"></Label>
+       <Label class="actionbar_text" text="Home"></Label>
     </ActionBar>
-    <ListView items="{{ items }}" itemTap="onItemTap">
-        <ListView.itemTemplate>
-            <StackLayout orientation="horizontal">
-                <Label text="{{ name }}" textWrap="true"></Label>
-            </StackLayout>
-        </ListView.itemTemplate>
-    </ListView>
+    <ScrollView>
+		<StackLayout class="gradient">
+            <Image class="home_page_image" src="~/pictures/HULLADAG2-6738.jpg" height="250" stretch="aspectFill"/>
+			<Label class="home_page_text" text="Welkom bij Kopjek!" textWrap="true" />
+            <Label class="home_page_text" text="Hier kunt u tickets reserveren voor onze volgende evenementen" textWrap="true" />
+		</StackLayout>
+	</ScrollView>
 </Page>

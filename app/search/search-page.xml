@@ -1,8 +1,9 @@
-<Page
+<Page 
+	class="background"
     navigatingTo="onNavigatingTo"  
     xmlns="http://schemas.nativescript.org/tns.xsd">
     <ActionBar class="actionbar">
-        <Label text="Contact"></Label>
+        <Label class="actionbar_text" text="Contact"></Label>
     </ActionBar>
     <ScrollView>
 		<StackLayout class="gradient">
@@ -10,7 +11,6 @@
 			<TextField hint="Uw Achternaam" backgroundColor="#e7e7e7" />
 			<TextField hint="Uw emailadres" backgroundColor="#e7e7e7" />
 			<TextField hint="Uw vraag?" rows="20" cols="55" backgroundColor="#e7e7e7" />
-
 			<Button text="Verzend"/>
 			<Button text="Annuleren"/>
 		</StackLayout>

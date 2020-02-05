@@ -1,8 +1,9 @@
 <Page
+    class="background"
     navigatingTo="onNavigatingTo"  
     xmlns="http://schemas.nativescript.org/tns.xsd">
     <ActionBar class="actionbar">
-        <Label text="Login"></Label>
+        <Label class="actionbar_text" text="Login"></Label>
     </ActionBar>
     <ScrollView>
 		<StackLayout class="gradient">
@@ -12,7 +13,7 @@
 			<Button text="Verzend"/>
 			<Button text="Annuleren"/>
 
-            <Button text="Heeft u nog geen account, klik dan hier" /> 
+            <Button onNavigatingTo="~/home/home=items-page.xml" text="Heeft u nog geen account, klik dan hier"/> 
 
 		</StackLayout>
         

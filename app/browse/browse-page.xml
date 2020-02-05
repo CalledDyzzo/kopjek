@@ -1,9 +1,10 @@
 <Page
+	class="background"
     navigatingTo="onNavigatingTo"  
     xmlns="http://schemas.nativescript.org/tns.xsd">
 
     <ActionBar class="actionbar">
-        <Label text="Tickets"></Label>
+        <Label class="actionbar_text" text="Tickets"></Label>
     </ActionBar>
     
     <GridLayout rows="*" xmlns:lv="nativescript-ui-listview" height="100%">
@@ -12,7 +13,7 @@
 				<lv:ListViewGridLayout scrollDirection="Vertical" itemHeight="200" spanCount="2" />
 			</lv:RadListView.listViewLayout>
 			<lv:RadListView.itemTemplate>
-				<GridLayout rows="*" backgroundColor="White">
+				<GridLayout rows="*">
 					<GridLayout rows="*" columns="*" margin="15">
 						<Image src="{{ imageSrc }}" stretch="aspectFill" />
 						<GridLayout verticalAlignment="bottom">
